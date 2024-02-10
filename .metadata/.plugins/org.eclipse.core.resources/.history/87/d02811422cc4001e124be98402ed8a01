@@ -1,0 +1,26 @@
+package controllExam;
+
+import java.util.Scanner;
+
+public class ControllP7 {
+	public void method() {
+
+		// 키, 몸무게를 double로 입력받고 BMI지수를 계산하여 계산 결과에 따라
+		// 저체중/정상체중/과체중/비만을 출력하세요
+		// BMI = 몸무게/(키(m) * 키(m)
+		// BMI가 18.5미만일 경우 저체중 / 18.5이상일 경우 정상체중
+		// BMI가 23이상 25미만일 경우 과체중 / 25이상 30미만일 경우 비만
+		// BMI가 30이상일 경우 고도 비만
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("키를 입력하세요 : ");
+		double height = sc.nextDouble();
+		
+		System.out.println("몸무게를 입력하세요 : ");
+		double weight = sc.nextDouble();
+		
+		float bmi = (weight)f /(height*height)f;
+
+	}
+
+}

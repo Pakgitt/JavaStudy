@@ -1,0 +1,42 @@
+package controllExam;
+
+import java.util.Scanner;
+
+public class Run {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("실습 문제를 고르시오 : ");
+		int inputInt = sc.nextInt();
+
+		switch (inputInt) {
+		case 1:
+			new ControllP1().method();
+			break;
+		case 2:
+			new ControllP2().method();
+			break;
+		case 3:
+			new ControllP3().method();
+			break;
+		case 4:
+			new ControllP4().method();
+			break;
+		case 5:
+			new ControllP5().method();
+			break;
+		case 6:
+			new ControllP6().method();
+			break;
+		case 7:
+			new ControllP7().method();
+			break;
+		case 8:
+			new ControllP8().method();
+			break;
+		default:
+			break;
+		}
+	}
+}

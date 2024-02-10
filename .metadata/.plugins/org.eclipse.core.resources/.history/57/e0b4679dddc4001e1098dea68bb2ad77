@@ -1,0 +1,10 @@
+package controllExam;
+
+import java.util.Scanner;
+
+public class ControllPp10 {
+	public void method() {
+
+		// 
+	}
+}

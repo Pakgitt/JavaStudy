@@ -1,0 +1,10 @@
+package operatroExam;
+
+import java.util.Scanner;
+
+public class OperatorP6 {
+	public void method() {
+
+	}
+
+}

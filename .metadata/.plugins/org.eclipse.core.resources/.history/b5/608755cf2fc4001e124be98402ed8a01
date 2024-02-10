@@ -1,0 +1,51 @@
+package controllExam;
+
+import java.util.Scanner;
+
+public class ControllP8 {
+	public void method() {
+
+		// 두개의 정수와 연산 기호를 입력받아 연산 기호에 맞춰 연산 결과를 출력하세요.
+		// 단, 두 개의 정수 모두 양수일때만 작동하고,
+		// 없는 연산 기호를 입력했을시 "잘못 입력했습니다. 프로그램을 종료합니다."를 출력하시오.
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("두개의 정수를 입력하시오 : ");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+
+		System.out.println("연산자를 입력하시오(+,-,*,/,%) : ");
+		char z = sc.next().charAt(0);
+
+		int sum = x + y;
+		int minus = x - y;
+		int multiply = x * y;
+		int divide = x / y;
+		int remain = x % y;
+
+		if (x > 0 && y > 0) {
+			switch (z) {
+			case '+':
+				System.out.println(x + "+" + y + "=" + sum);
+				break;
+			case '-':
+				System.out.println(x + "-" + y + "=" +minus);
+				break;
+			case '*':
+				System.out.println(x + "*" + y + "=" +multiply);
+				break;
+			case '/':
+				System.out.println(x + "/" + y + "=" +divide);
+				break;
+			case '%':
+				System.out.println(x + "%" + y + "=" +remain);
+				break;
+			default:
+				System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
+				break;
+			}
+		}
+
+	}
+
+}

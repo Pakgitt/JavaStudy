@@ -1,0 +1,11 @@
+package operatroExam;
+
+public class Run {
+	public static void main(String[] args) {
+		
+//		new OperatorP1().method();
+		
+		new OperatorP2().method();
+	}
+
+}

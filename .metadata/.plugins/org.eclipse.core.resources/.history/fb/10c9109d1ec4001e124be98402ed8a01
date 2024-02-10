@@ -1,0 +1,64 @@
+package controllExam;
+
+import java.util.Scanner;
+
+public class ControllP1 {
+	public void method() {
+
+		// 메뉴를 출력하고 메뉴 번호를 누르면"??메뉴입니다"를
+		// 종료 번호를 누르면 "프로그램이 종료됩니다."를 출력하세요.
+		boolean run = true;
+
+		while (run) {
+
+			Scanner sc = new Scanner(System.in);
+
+			System.out.println("메뉴 번호를 입력하세요. : ");
+			System.out.print("1. 입력, ");
+			System.out.print("2. 수정, ");
+			System.out.print("3. 조회, ");
+			System.out.print("4. 삭제, ");
+			System.out.print("7. 종료, ");
+
+			int option = sc.nextInt();
+
+			switch (option) {
+			case 1:
+				System.out.println("입력 메뉴입니다.");
+				break;
+			case 2:
+				System.out.println("수정 메뉴입니다.");
+				break;
+			case 3:
+				System.out.println("조회 메뉴입니다.");
+				break;
+			case 4:
+				System.out.println("삭제 메뉴입니다.");
+				break;
+			case 7:
+				System.out.println("프로그램 종료.");
+//				run = false; // run값에 false를 줘서 while문도 종료
+				break;
+			default:
+				System.out.println("없는 메뉴입니다.");
+				break;
+			}
+//		System.out.println("1. 입력 : ");
+//		int in = sc.nextInt();
+//		
+//		System.out.println("2. 수정: ");
+//		int up = sc.nextInt();
+//		
+//		System.out.println("3. 조회: ");
+//		int serch = sc.nextInt();
+//		
+//		System.out.println("4. 삭제 : ");
+//		int delet = sc.nextInt();
+//		
+//		System.out.println("7. 종료 : ");
+//		int end = sc.nextInt();
+		}
+
+	}
+
+}

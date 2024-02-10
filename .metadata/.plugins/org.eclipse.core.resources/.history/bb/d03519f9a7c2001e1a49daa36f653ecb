@@ -1,0 +1,10 @@
+package operatroExam;
+
+import java.util.Scanner;
+
+public class OperatorPp11 {
+	public void method() {
+		// A, B, C 사원의 연봉을 입력받고
+				
+	}
+}

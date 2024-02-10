@@ -1,0 +1,17 @@
+package operatroExam;
+
+import java.util.Scanner;
+
+public class OperatorP3 {
+	public void method() {
+		
+		//입력 받은 하나의 정수가 짝수이면 "짝수다", 짝수가 아니면 "홀수다"를 출력하시오.
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("정수 하나를 입력하세요 :");
+		int inputInt = sc.nextInt();
+		
+		System.out.println((inputInt/2 ==0) ? "짝수다" : "홀수다");
+
+	}
+}

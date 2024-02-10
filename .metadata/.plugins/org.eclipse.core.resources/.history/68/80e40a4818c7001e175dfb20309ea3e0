@@ -1,0 +1,12 @@
+package repeatEaxm;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class RepeatPp10 {
+	public static void main(String[] args) {
+
+		// 시작 숫자와 공차를 입력받아 일정한 값으로 숫자가 커지거나 작아지는 프로그램을 구현하세요
+		// 단 출력되는 숫자는 총 10개입니다.
+	}
+}

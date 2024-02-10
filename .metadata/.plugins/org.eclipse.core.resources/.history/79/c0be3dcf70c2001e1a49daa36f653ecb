@@ -1,0 +1,13 @@
+package VariableExam;
+
+
+public class Run2 {
+	public static void main(String[] args) {
+		VariableP
+
+////		new VariablePractice2().method1();
+//		VariablePractice2 v2 = new VariablePractice2();
+//		v2.method1();
+
+	}
+}

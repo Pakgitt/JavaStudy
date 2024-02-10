@@ -1,0 +1,28 @@
+package wk1;
+
+public class Date0203 {
+	public static void main(String[] args) {
+		char ch1 = 'A';
+		System.out.println(ch1); // 문자 출력
+		System.out.println((int)ch1); // 문자에 해당하는 정수 값(아스키코드 값)출력
+		
+		char ch2 = 'B';
+		System.out.println(ch2);
+		System.out.println((int)ch2);
+		
+		int ch3 = 67;
+		System.out.println(ch3);
+		System.out.println((char) ch3);
+		
+		int a = 10;
+		float b = 2.0f;
+		
+		System.out.println(a + b);
+		
+		int num = 10;
+		boolean tf = ((num %2 == 10)? true : false);
+		System.out.println(tf);
+		
+	}
+
+}

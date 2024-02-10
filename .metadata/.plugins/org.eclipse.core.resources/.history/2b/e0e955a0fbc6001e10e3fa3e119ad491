@@ -1,0 +1,11 @@
+package repeatEaxm;
+
+import java.util.Scanner;
+
+public class RepeatP2 {
+	public static void main(String[] args) {
+
+		// 
+	}
+
+}
