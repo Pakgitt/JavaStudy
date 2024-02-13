@@ -10,6 +10,7 @@ public class ArrayP5 {
 		// 범위에 없는 숫자를 입력 시 "잘못 입력하셨습니다"를 출력
 		
 		//test111
+		// git test
 		
 		
 	}
