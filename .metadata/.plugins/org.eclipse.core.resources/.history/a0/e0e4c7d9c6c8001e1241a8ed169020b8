@@ -1,0 +1,16 @@
+package oop;
+
+public class TriangleController {
+	private Shape s = new Shape();
+	
+	public double calcArea(double height, double width) {
+		
+	}
+	public void paintColor(String color) {
+		
+	}
+	public String print() {
+		return "TriangleController [s=" + s + "]";
+	}
+	
+}

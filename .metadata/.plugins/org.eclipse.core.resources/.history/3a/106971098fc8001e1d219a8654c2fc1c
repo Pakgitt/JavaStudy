@@ -1,0 +1,18 @@
+package wk1;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Date0203 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		
+		for(int i = x; i >=0; i--) {
+			for(int j = 1; j <=i ; j++) {
+				System.out.println("*");
+			}
+		}System.out.println();
+	}
+}

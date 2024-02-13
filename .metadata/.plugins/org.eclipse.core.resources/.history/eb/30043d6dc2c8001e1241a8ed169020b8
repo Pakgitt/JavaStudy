@@ -1,0 +1,12 @@
+package oop;
+
+public class Squarecontroller {
+	private Shape s = new Shape();
+	
+	public double calcPerimeter(double height, double width) {
+		s.getHeight();
+		s.getWidth();
+	}
+	
+
+}

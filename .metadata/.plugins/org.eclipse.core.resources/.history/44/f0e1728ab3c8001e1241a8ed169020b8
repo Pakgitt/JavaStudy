@@ -1,0 +1,16 @@
+package fieldExam;
+
+public class Student {
+	private int grade = 10;
+	private int classroom = 3;
+	private String name = "박세혁";
+	private double height = 179.2;
+	private char gender = 'M';
+	
+	public Student() {
+		
+	}
+	public void information() {
+		
+	}
+}

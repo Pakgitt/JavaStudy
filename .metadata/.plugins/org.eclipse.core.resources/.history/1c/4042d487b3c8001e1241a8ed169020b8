@@ -1,0 +1,18 @@
+package fieldExam;
+
+public class Product {
+	private String pName = "박세혁";
+	private int price = 1000;
+	private String brand = "몽클레어";
+
+	public Product() {
+
+	}
+
+	public void infirmation() {
+		System.out.println(pName);
+		System.out.println(price);
+		System.out.println(brand);
+	}
+
+}

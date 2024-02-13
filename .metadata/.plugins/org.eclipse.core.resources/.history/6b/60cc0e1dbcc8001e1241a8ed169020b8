@@ -1,0 +1,9 @@
+package fieldExam;
+
+public class RunEmployee {
+	public static void main(String[] args) {
+		
+		Employee e = new Employee();
+		
+	}
+}

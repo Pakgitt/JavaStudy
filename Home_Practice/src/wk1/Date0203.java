@@ -5,27 +5,53 @@ import java.util.Scanner;
 
 public class Date0203 {
 	public static void main(String[] args) {
+		
+		int a = 10;
+		int b;
+		b = 20;
 
-		// 사용자로부터 두 개의 값을 입력받아 그 사이의 숫자를 모두 출력하세요.
-		// 만일 1 미만의 숫자가 입력됐다면 "1 이상의 숫자를 입력해주세요"를 출력
+		int[] arr1 = new int[] { 10, 20, 30, 40 };
+		int[] arr2 = new int[] { 1, 2, 3, 4, 5, 6 };
+		// 개인 실습 for()
+		System.arraycopy(arr1, 2, arr2, 1, 2);
+		System.out.println(arr2);
+		for (int i = 0; i < arr2.length; i++) {
+			System.out.println(arr2[i]);
 
-		Scanner sc = new Scanner(System.in);
-		System.out.println("첫 번째 숫자 :");
-		int x = sc.nextInt();
-
-		System.out.println("두 번째 숫자 : ");
-		int y = sc.nextInt();
-
-		if (x >= 1 && y >= 1) {
-			if (x <= y) {
-				for (int i = x; i <= y; i++) {
-					System.out.print(i + "\t");
-				}
-			} else {
-				System.out.println("첫 번째 숫자는 두 번째 숫자보다 작아야 합니다.");
-			}
-		} else {
-			System.out.println("1 이상의 숫자를 입력해야 합니다.");
 		}
+		int v1 = 100;
+		double v2 = 5.3;
+		String v3 = "자료형에 따라 접근 가능 메소드";
+		int[] v4 = new int[] { 10, 20 };
+		String[] v5 = new String[] { "기호", "주의" };
+
+		System.out.println(v3.charAt(3));
+		System.out.println(v5.clone());
+		System.out.println(v3.substring(2, 6));
+
+		String str = "10";
+		int num = Integer.valueOf(str);
+		System.out.println(num + 3);
+		double d = Double.valueOf(str);
+		System.out.println(d);
+
+		int[][] array20 = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 } }; // [2][4]
+		int[][] array21 = { { 1, 2, 3, 4 }, { 5, 6, 7 } }; // 가변 배열[2][3] 더 많은 수 기준
+		System.out.println(array21[1][2]);
+		int[][] array22 = { { 1, 2, 3 }, { 5, 6, 7 } }; // [2][3]
+		int[][] array23 = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 } };
+		int[][] array24 = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 } };
+
+		System.out.println(array21.length); // 행크기, m
+		System.out.println(array21[0].length); // 행[0]의 열크기, n
+		System.out.println(array21[1].length); // 행[1]의 열크기, n
+		for (int m = 0; m < array21.length; m++) { // 행크기
+			for (int n = 0; n < array21[m].length; n++) { // 행[m]의 열크기
+				System.out.println(array21[m][n]);
+
+			}
+
+		}
+		// ----- 2차원 가변 배열 -----
 	}
 }

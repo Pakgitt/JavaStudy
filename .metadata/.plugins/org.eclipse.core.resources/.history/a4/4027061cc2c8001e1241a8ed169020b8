@@ -1,0 +1,11 @@
+package oop;
+
+public class Squarecontroller {
+	private Shape s = new Shape();
+	
+	public double calcPerimter(double height, double width) {
+		s.getHeight();
+		s.getWidth();
+	}
+
+}

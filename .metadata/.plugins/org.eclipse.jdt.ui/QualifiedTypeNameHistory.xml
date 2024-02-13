@@ -12,6 +12,24 @@
     <fullyQualifiedTypeName name="controllExam.ControllP4"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="javax.swing.event.TreeWillExpandListener"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="fieldExam.Circle"/>
+    <fullyQualifiedTypeName name="fieldExam.Student"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="fieldExam.Lotto"/>
+    <fullyQualifiedTypeName name="fieldExam.Product"/>
+    <fullyQualifiedTypeName name="fieldExam.Book"/>
+    <fullyQualifiedTypeName name="fieldExam.Employee"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.serial.SQLOutputImpl"/>
+    <fullyQualifiedTypeName name="fieldExam.Snack"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="fieldExam.SnackController"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="oop.TriangleController"/>
+    <fullyQualifiedTypeName name="oop.Squarecontroller"/>
+    <fullyQualifiedTypeName name="oop.ShapeMenu"/>
+    <fullyQualifiedTypeName name="oop.Shape"/>
+    <fullyQualifiedTypeName name="oop.EmployeeController"/>
+    <fullyQualifiedTypeName name="oop.employeeMenu"/>
+    <fullyQualifiedTypeName name="oop.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,6 @@
+package fieldExam;
+
+public class Lotto {
+	private int[] lotto; 
+
+}

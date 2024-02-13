@@ -1,0 +1,11 @@
+package oop;
+
+import java.util.Scanner;
+
+public class employeeMenu {
+	private Scanner sc = new Scanner(System.in);
+	private EmployeeController ec = new EmployeeController();
+	
+	public employeeMenu
+
+}
