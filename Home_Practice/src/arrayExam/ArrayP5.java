@@ -5,15 +5,10 @@ import java.util.Scanner;
 public class ArrayP5 {
 	public static void main(String[] args) {
 
-		// 문자열을 입력받아 문자 하나하나를 배열에 넣고 검색할 문자가 문자열에 몇 개 들어가 있는지
-		// 개수와 몇 번째 인덱스에 위치하는지 인덱스를 출력하세요
+		// "월"~"일"까지 초기화된 문자열 배열을 만들고 0부터 6까지 숫자를 입력받아
+		// 입력한 숫자와 같은 인덱스에 있는 요일을 출력하고
+		// 범위에 없는 숫자를 입력 시 "잘못 입력하셨습니다"를 출력
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("문자열 입력 : ");
-		String inputStr = sc.next();
-		System.out.println("n문자 위치");
-		char n = sc.next().charAt(0);
 		
-		System.out.println(inputStr+"에 " +n+"이 존재하는 위치 : " + inputStr.charAt(n) );
 	}
 }
