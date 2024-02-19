@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="javax.swing.event.TreeWillExpandListener"/>
     <fullyQualifiedTypeName name="fieldExam.Circle"/>
     <fullyQualifiedTypeName name="fieldExam.Student"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="fieldExam.Lotto"/>
     <fullyQualifiedTypeName name="fieldExam.Product"/>
     <fullyQualifiedTypeName name="fieldExam.Book"/>
@@ -37,4 +36,8 @@
     <fullyQualifiedTypeName name="com.kh.example.practice3.model.vo.Circle"/>
     <fullyQualifiedTypeName name="com.kh.example.practice4.run.StudentRun"/>
     <fullyQualifiedTypeName name="com.kh.example.practice4.model.vo.Student"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice5.run.LottoRun"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
