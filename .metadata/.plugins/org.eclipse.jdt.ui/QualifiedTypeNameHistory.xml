@@ -32,4 +32,9 @@
     <fullyQualifiedTypeName name="oop.employeeMenu"/>
     <fullyQualifiedTypeName name="oop.Employee"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice1.model.vo.Member"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice2.model.vo.Product"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice3.model.vo.Circle"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice4.run.StudentRun"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice4.model.vo.Student"/>
 </qualifiedTypeNameHistroy>
