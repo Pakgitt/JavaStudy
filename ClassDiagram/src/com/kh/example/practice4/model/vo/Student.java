@@ -18,6 +18,7 @@ public class Student {
 	}
 
 	public void information() {
+//		return grade + classroom + name + height + gender;
 		System.out.printf("%d학년 %d반 %s %.2fcm %c자", grade, classroom, name, height, gender);
 	}
 
