@@ -1,7 +1,0 @@
-package fieldExam;
-
-public class Lotto {
-	private int[] lotto = new int[6];
-	lotto = new int[6];
-
-}
