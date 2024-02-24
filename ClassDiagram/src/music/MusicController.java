@@ -11,6 +11,7 @@ public class MusicController {
 		list.add(new Music("거짓말", "빅뱅"));
 		list.add(new Music("I DON'T CARE", "2NE1"));
 		list.add(new Music("달라달라", "잇지"));
+		// 아 어려워 못하겠어
 	}
 
 	public int addList(Music music) {
