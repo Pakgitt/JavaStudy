@@ -1,7 +1,0 @@
-package fieldExam;
-
-public class RunStudent {
-	public static void main(String[] args) {
-		
-	}
-}
