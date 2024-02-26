@@ -88,9 +88,9 @@ public class MusicView {
 		// 추가 성공 시 “추가 성공”, 추가 실패 시 “추가 실패” 콘솔 창에 출력
 		System.out.println("첫 위치에 곡 추가");
 		System.out.println("곡명을 입력하세요 : ");
-		String title = sc.nextLine();
+		String title = sc.next();
 		System.out.println("가수명을 입력하세요 : ");
-		String singer = sc.nextLine();
+		String singer = sc.next();
 
 		int result = mc.addAtZero(new Music(title, singer));
 
@@ -114,12 +114,12 @@ public class MusicView {
 		// 반환 값이 있으면 “검색한 곡은 000(곡 명, 가수 명) 입니다.” 콘솔 창에 출력
 		System.out.println("특정 곡 검색");
 		System.out.println("검색할 곡 : ");
-		String title = sc.nextLine();
+		String title = sc.next();
 		Music serachM = mc.searchMusic(title);
 		if (serachM == null) {
 			System.out.println("검색한 곡이 없습니다");
 		} else {
-			System.out.println("검색한 곡은 " + serachM.getTitle() + "의" + serachM.getTitle() + "입니다.");
+			System.out.println("검색한 곡은 " + serachM.getSinger() + "의 " + serachM.getTitle() + "입니다.");
 		}
 	}
 
@@ -129,11 +129,12 @@ public class MusicView {
 		// 반환 값이 있으면 “000(곡 명, 가수 명)을 삭제 했습니다” 콘솔 창에 출력
 		System.out.println("특정 곡 삭제");
 		System.out.println("삭제할 곡을 입력하세요 : ");
-		String remove = sc.nextLine();
+		String remove = sc.next();
 		Music removeM = mc.removeMusic(remove);
 		if (removeM == null) {
 			System.out.println("삭제할 곡이 없습니다");
 		} else {
+			mc.removeMusic(remove);
 			System.out.println(removeM.getSinger() + "의 " + removeM.getTitle() + "을 삭제 했습니다");
 		}
 	}

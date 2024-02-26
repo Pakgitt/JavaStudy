@@ -37,7 +37,7 @@ public class Music implements Comparator<Music> {
 	}
 
 	public String getTitle() {
-		return singer;
+		return title;
 	}
 
 	public void setTitle(String title) {

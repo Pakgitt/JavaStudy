@@ -23,7 +23,7 @@ public class MusicController {
 	public int addAtZero(Music music) {
 		// 리스트 마지막에 값 저장 메소드
 		list.add(0, music);
-		return 0;
+		return 1;
 
 	}
 
@@ -38,7 +38,7 @@ public class MusicController {
 		Music searchM = null;
 		for (Music m : list) {
 			if (m.getTitle().equals(title)) {
-				searchM = list.get(list.indexOf(m));
+				searchM = m;
 				break;
 			} else {
 				searchM = null;
@@ -54,7 +54,7 @@ public class MusicController {
 		Music removeM = new Music();
 		for (Music m : list) {
 			if (m.getTitle().equals(title)) {
-				removeM = list.remove(list.indexOf(m));
+				removeM = m;
 				break;
 
 			} else {
