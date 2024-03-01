@@ -14,16 +14,20 @@ public class JdbcTest {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver"); // drvier class 파일 있는지 확인.
 			// DriverManager
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:XE", "scott", "TIGER");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.219.101:1521:XE", "scott", "TIGER");
 			if (conn != null) {
+				stmt = conn.createStatement();
+				rset = stmt.executeQuery("select * from emp");
 				System.out.println("연결성공");
-			} else {
-				System.out.println("연결실패");
-			}
-			stmt = conn.createStatement();
-			rset = stmt.executeQuery("select id, last_name from emp");
-			int result = stmt.executeUpdate("UPDATE EMP SET LAST_NAME = 'KIM' WHERE ID = '10000'");
+				while (rset.next()) {
+					System.out.println();
+					System.out.println(rset.getInt("empno"));
+					System.out.println(rset.getString("ename"));
+					System.out.println(rset.getDouble("sal"));
 
+				}
+				System.out.println("끝");
+			}
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
