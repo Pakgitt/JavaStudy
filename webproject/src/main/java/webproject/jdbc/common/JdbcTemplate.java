@@ -12,7 +12,7 @@ public class JdbcTemplate {
 		Connection conn = null;
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@locahost:1521:xe", "scott", "TIGER");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.219.101:1521:xe", "scott", "TIGER");
 			if (conn != null) {
 				System.out.println("¿¬°áµÊ");
 			} else {

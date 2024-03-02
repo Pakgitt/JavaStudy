@@ -42,7 +42,7 @@ public class SalgradeController extends HttpServlet {
 			request.getRequestDispatcher("views/salgradelist.jsp").forward(request, response);
 		} else {
 			request.setAttribute("msg", "저는 에러에영");
-			request.getRequestDispatcher("views/errorpage.jsp").forward(request, response);
+			request.getRequestDispatcher("/views/errorpage.jsp").forward(request, response);
 		}
 	}
 

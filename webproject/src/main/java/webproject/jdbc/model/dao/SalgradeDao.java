@@ -13,6 +13,7 @@ import webproject.jdbc.model.vo.Salgrade;
 public class SalgradeDao {
 
 	public void selectOne() {
+		
 	}
 
 	public List<Salgrade> selectList(Connection conn) {
@@ -61,11 +62,26 @@ public class SalgradeDao {
 			close(pstmt);
 
 		}
+		System.out.println("추가 : " + result);
 		return result;
 
 	}
 
-	public void delete() {
+	public int delete(Connection conn, int grade) {
+		int result = -1;
+		String sql = "delete from salgrade where grade = ?";
+		PreparedStatement pstmt = null;
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, grade);
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close(pstmt);
+		}
+		System.out.println("삭제 번호 : " + result);
+		return result;
 
 	}
 

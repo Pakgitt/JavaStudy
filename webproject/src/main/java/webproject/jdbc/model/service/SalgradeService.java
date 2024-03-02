@@ -24,7 +24,7 @@ public class SalgradeService {
 
 	public int insert(Salgrade vo) {
 		int result = -1;
-		Connection conn = null;
+		Connection conn = getConnection();
 		autocommit(conn, false);
 		result = dao.insert(conn, vo);
 		if (result > 0) {
@@ -37,7 +37,18 @@ public class SalgradeService {
 
 	}
 
-	public void delete() {
+	public int delete(int grade) {
+		int result = -1;
+		Connection conn = getConnection();
+		autocommit(conn, false);
+		result = dao.delete(conn, grade);
+		if (result > 0) {
+			commit(conn);
+		} else {
+			rollback(conn);
+		}
+		close(conn);
+		return result;
 
 	}
 }

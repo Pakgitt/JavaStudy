@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h1>${mag }</h1>
+	에러
 	
 </body>
 </html>
