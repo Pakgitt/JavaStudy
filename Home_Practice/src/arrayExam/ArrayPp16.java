@@ -11,17 +11,43 @@ public class ArrayPp16 {
 		// 늘린 곳에 어떤 데이터를 넣을 것인지 받으세요
 		// 사용자가 더 이상 입력하지 않겠다고 하면 배열 전체 값을 출력하세요.
 
-		// TODO 미완성 (추가)
-
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("배열의 크기를 입력 : ");
 		int arrSize = sc.nextInt();
+		sc.nextLine(); // 엔터를 소비하기 위해 추가적인 nextLine() 호출
 		String[] arrStr = new String[arrSize];
-		for (int i = 0; i < arrSize; i++) {
-			System.out.println((i + 1) + "번째 문자열");
-			arrStr[i] = sc.next();
-		}
+
+		do {
+			for (int i = 0; i < arrSize; i++) {
+				System.out.println((i + 1) + "번째 문자열 : ");
+				arrStr[i] = sc.nextLine();
+			}
+			System.out.println("값을 더 입력하겠습니까?(Y/N) : ");
+			char add = sc.next().charAt(0);
+			sc.nextLine();
+
+			if (add != 'Y' && add != 'y') {
+				break;
+			}
+			System.out.println("더 입력하고 싶은 개수 : ");
+			int addSize = sc.nextInt();
+			sc.nextLine();
+
+			// 배열크기 확장
+			String[] newArrstr = new String[arrSize + addSize];
+			// 기존 배열 값을 새로운 배열에 복사
+			System.arraycopy(arrStr, 0, newArrstr, 0, arrSize);
+			// 추가로 입력받은 값을 새로운 배열에 넣기
+			for (int i = arrSize; i < newArrstr.length; i++) {
+				System.out.println((i + 1) + "번째 문자열 : ");
+				newArrstr[i] = sc.nextLine();
+			}
+			// 새로운 배열 교체
+			arrStr = newArrstr;
+
+		} while (true);
+
 		for (String i : arrStr) {
 			System.out.print(i + " ");
 		}

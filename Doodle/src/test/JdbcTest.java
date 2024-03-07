@@ -1,48 +1,56 @@
 package test;
 
-import java.sql.Statement;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.util.Scanner;
 
 public class JdbcTest {
 	public static void main(String[] args) {
-		Connection conn = null;
-		Statement stmt = null;
-		ResultSet rset = null;
-		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver"); // drvier class 파일 있는지 확인.
-			// DriverManager
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.219.101:1521:XE", "scott", "TIGER");
-			if (conn != null) {
-				stmt = conn.createStatement();
-				rset = stmt.executeQuery("select * from emp");
-				System.out.println("연결성공");
-				while (rset.next()) {
-					System.out.println();
-					System.out.println(rset.getInt("empno"));
-					System.out.println(rset.getString("ename"));
-					System.out.println(rset.getDouble("sal"));
 
-				}
-				System.out.println("끝");
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("배열의 크기를 입력 : ");
+		int arrSize = sc.nextInt();
+		sc.nextLine(); // 엔터를 소비하기 위해 추가적인 nextLine() 호출
+
+		String[] arrStr = new String[arrSize];
+
+		do {
+			for (int i = 0; i < arrSize; i++) {
+				System.out.println((i + 1) + "번째 문자열 : ");
+				arrStr[i] = sc.nextLine();
 			}
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if (rset != null)
-					rset.close();
-				if (stmt != null)
-					stmt.close();
-				if (conn != null)
-					conn.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
+
+			System.out.println("값을 더 입력하겠습니까?(Y/N) : ");
+			char add = sc.next().charAt(0);
+			sc.nextLine();
+
+			if (add != 'Y' && add != 'y') {
+				break;
 			}
+
+			System.out.println("더 입력하고 싶은 개수 : ");
+			int addSize = sc.nextInt();
+			sc.nextLine(); // 엔터를 소비하기 위해 추가적인 nextLine() 호출
+
+			// 배열 크기 확장
+			String[] newArrStr = new String[arrSize + addSize];
+
+			// 기존 배열 값을 새로운 배열에 복사
+			System.arraycopy(arrStr, 0, newArrStr, 0, arrSize);
+
+			// 추가로 입력받은 값을 새로운 배열에 넣기
+			for (int i = arrSize; i < arrSize + addSize; i++) {
+				System.out.println((i + 1) + "번째 문자열 : ");
+				newArrStr[i] = sc.nextLine();
+			}
+
+			// 새로운 배열로 교체
+			arrStr = newArrStr;
+			arrSize += addSize;
+
+		} while (true);
+
+		for (String i : arrStr) {
+			System.out.print(i + " ");
 		}
 	}
 }
