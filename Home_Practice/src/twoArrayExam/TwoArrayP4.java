@@ -1,8 +1,5 @@
 package twoArrayExam;
 
-import java.util.Arrays;
-import java.util.Iterator;
-
 public class TwoArrayP4 {
 	public static void main(String[] args) {
 
@@ -49,13 +46,10 @@ public class TwoArrayP4 {
 			sum32 += arr[i][2];
 			arr[3][2] = sum32;
 
-			// 가로 세로 합
-			// TODO 해결 X
-			for (int j = 0; j < 3; j++) {
-				sum33 += arr[3][i] + arr[i][3];
-				arr[3][3] = sum33;
-			}
-
+		}
+		for (int j = 0; j < 3; j++) {
+			sum33 += arr[3][j] + arr[j][3];
+			arr[3][3] = sum33;
 		}
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr.length; j++) {

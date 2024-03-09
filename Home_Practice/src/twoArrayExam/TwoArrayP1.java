@@ -1,7 +1,5 @@
 package twoArrayExam;
 
-import java.util.Iterator;
-
 public class TwoArrayP1 {
 	public static void main(String[] args) {
 
