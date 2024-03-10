@@ -9,6 +9,8 @@ public class TwoArrayP7 {
 		// 사용자에게 행의 크기를 입력받고 그 수만큼의 반복을 통해
 		// 열의 크기도 받아 문자형 가변 배열을 선언 및 할당해라
 		// 그리고 각 인덱스에 'a'부터 총 인덱스의 개수만큼 하나씩 늘려 저장하고 출력
+		
+		// TODO 미완성
 		Random rd = new Random();
 		Scanner sc = new Scanner(System.in);
 
