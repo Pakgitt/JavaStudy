@@ -5,52 +5,36 @@ import java.util.Scanner;
 public class JdbcTest {
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		// 구구단
+//		for (int i = 1; i < 10; i++) {
+//			System.out.println(i + "단");
+//			for (int j = 1; j < 10; j++) {
+//				System.out.println(i + "X" + j + "=" + i * j);
+//			}
+//			System.out.println();
+//		}
+//		System.out.println();
 
-		System.out.println("배열의 크기를 입력 : ");
-		int arrSize = sc.nextInt();
-		sc.nextLine(); // 엔터를 소비하기 위해 추가적인 nextLine() 호출
+		// 3의 약수 찾기
+//		System.out.println("숫자를 입력하세요");
+//		Scanner sc = new Scanner(System.in);
+//		int num = sc.nextInt();
+//		
+//		if(num%3==0 && num>0) {
+//			System.out.println("3의 약수입니다");
+//		}else {
+//			System.out.println("3의 약수가 아닙니다");
+//		}
 
-		String[] arrStr = new String[arrSize];
+		int num = 10;
+		int sum = 0;
 
-		do {
-			for (int i = 0; i < arrSize; i++) {
-				System.out.println((i + 1) + "번째 문자열 : ");
-				arrStr[i] = sc.nextLine();
+		for (int i = 1; i <= 10; i++) {
+			if (i % 2 == 1) {
+				continue;
 			}
-
-			System.out.println("값을 더 입력하겠습니까?(Y/N) : ");
-			char add = sc.next().charAt(0);
-			sc.nextLine();
-
-			if (add != 'Y' && add != 'y') {
-				break;
-			}
-
-			System.out.println("더 입력하고 싶은 개수 : ");
-			int addSize = sc.nextInt();
-			sc.nextLine(); // 엔터를 소비하기 위해 추가적인 nextLine() 호출
-
-			// 배열 크기 확장
-			String[] newArrStr = new String[arrSize + addSize];
-
-			// 기존 배열 값을 새로운 배열에 복사
-			System.arraycopy(arrStr, 0, newArrStr, 0, arrSize);
-
-			// 추가로 입력받은 값을 새로운 배열에 넣기
-			for (int i = arrSize; i < arrSize + addSize; i++) {
-				System.out.println((i + 1) + "번째 문자열 : ");
-				newArrStr[i] = sc.nextLine();
-			}
-
-			// 새로운 배열로 교체
-			arrStr = newArrStr;
-			arrSize += addSize;
-
-		} while (true);
-
-		for (String i : arrStr) {
-			System.out.print(i + " ");
+			sum += i;
 		}
+		System.out.println("1부터 10까지의 짝수 합 " + sum);
 	}
 }

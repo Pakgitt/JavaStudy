@@ -1,22 +1,11 @@
 INDEX VERSION 1.134+C:\workspace\JavaStudy\.metadata\.plugins\org.eclipse.jdt.core
-<<<<<<< HEAD
-1879313920.index
-2211479829.index
-783925646.index
-995298387.index
-1865797976.index
-3509570136.index
-2842528100.index
-472456348.index
-=======
-995298387.index
 2425490993.index
+995298387.index
 1865797976.index
 3697687376.index
 1551895230.index
-2842528100.index
-472456348.index
 3882262730.index
+472456348.index
 309492645.index
 686581626.index
 1879313920.index
@@ -24,12 +13,14 @@ INDEX VERSION 1.134+C:\workspace\JavaStudy\.metadata\.plugins\org.eclipse.jdt.co
 1143498815.index
 1966631946.index
 3281654093.index
+3328840574.index
 572116653.index
-1779717863.index
 3509570136.index
 1810335766.index
+1779717863.index
 2211479829.index
 2458717961.index
+2280254080.index
 186643649.index
 2418902921.index
 3502088897.index
@@ -45,10 +36,10 @@ INDEX VERSION 1.134+C:\workspace\JavaStudy\.metadata\.plugins\org.eclipse.jdt.co
 3093288786.index
 665560020.index
 1376376526.index
+1087792475.index
 3851544746.index
 2033137132.index
 4073520641.index
 933626350.index
 2684955809.index
 3255073913.index
->>>>>>> 2b6586a6e0433126c19bf1192490be22b6b24ee9
